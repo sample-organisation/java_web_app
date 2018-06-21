@@ -13,7 +13,7 @@ env:
     - artifact_id="helloworld"
     - artifact_version="0.0.1-SNAPSHOT"
     - artifact_extension="war"
-    - artifact_repo="repository/snapshots"
+    - artifact_repo="repository/maven-snapshots"
     - ship_test_res_loc="shippable/testresults"
 
 build:
