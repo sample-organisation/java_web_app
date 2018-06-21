@@ -109,7 +109,7 @@
     <distributionManagement>
         <snapshotRepository>
             <id>nexus-snapshots</id>
-            <url>${repository_url}</url>
+            <url>${NEXUS_HOST}</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
