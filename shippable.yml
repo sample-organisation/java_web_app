@@ -51,6 +51,7 @@ jobs:
     triggerMode: parallel
     steps:
       - IN: gcp_nexus_creds
+      - IN: gcp_nexus_info
       - OUT: war_loc
     flags:
       - war
