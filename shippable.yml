@@ -22,7 +22,7 @@ build:
     - |
        mkdir -p $ship_test_res_loc
        mkdir -p ~/.m2
-    - printenv
+    - export nexus_url="http://${NEXUS_HOST}"
     - shipctl replace temp/settings.xml pom.xml
     - cp temp/settings.xml ~/.m2/.
     - mvn -q -B clean install deploy

@@ -20,7 +20,7 @@
         <mirror>
             <id>central</id>
             <name>central</name>
-            <url>${NEXUS_HOST}/repository/maven-public/</url>
+            <url>${nexus_url}/repository/maven-public/</url>
             <mirrorOf>*</mirrorOf>
         </mirror>
     </mirrors>
