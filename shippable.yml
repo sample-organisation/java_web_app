@@ -18,11 +18,11 @@ env:
 
 build:
   ci:
+    - export nexus_url="http://${NEXUS_HOST}"
     - export repository_url=$nexus_url"/"$artifact_repo
     - |
        mkdir -p $ship_test_res_loc
        mkdir -p ~/.m2
-    - export nexus_url="http://${NEXUS_HOST}"
     - shipctl replace temp/settings.xml pom.xml
     - cp temp/settings.xml ~/.m2/.
     - mvn -q -B clean install deploy

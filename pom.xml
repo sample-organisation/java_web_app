@@ -109,7 +109,7 @@
     <distributionManagement>
         <snapshotRepository>
             <id>nexus-snapshots</id>
-            <url>${nexus_url}/repository/maven-snapshots</url>
+            <url>${repository_url}</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
