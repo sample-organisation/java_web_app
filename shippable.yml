@@ -48,6 +48,11 @@ resources:
       params:
         seed: true
 
+# Key-value pair integration containing the credentials for nexus
+  - name: gcp_nexus_creds
+    type: integration
+    integration: "drship_nexus"
+
 jobs:
   - name: java_web_app_runCI
     type: runCI
@@ -55,6 +60,7 @@ jobs:
     triggerMode: parallel
     steps:
       - IN: build_custom_ci_img_dh
+      - IN: gcp_nexus_creds
       - OUT: war_loc
     flags:
       - war
